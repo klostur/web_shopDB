@@ -135,7 +135,7 @@ FROM
     country ON place.country_id = country.id
 GROUP BY 1 ORDER BY 2 DESC;
 
--- Jedanaesti zadatak
+-- Deseti zadatak
 SELECT
 	IFNULL(country.name, 'Nepoznato') AS 'Naziv drzave',
     COUNT(user.id) AS 'Registrovanih korisnika'
@@ -149,7 +149,7 @@ FROM
     country ON place.country_id = country.id
 GROUP BY 1 ORDER By 2 DESC;
 
--- Dvanaesti zadatak
+-- Jedanaesti zadatak
 SELECT 
     country.name AS 'Ime Drzave',
     SUM(price) 'Ukupna zarada'
