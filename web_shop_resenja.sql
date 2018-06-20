@@ -137,7 +137,7 @@ GROUP BY 1 ORDER BY 2 DESC;
 
 -- Deseti zadatak
 SELECT
-	IFNULL(country.name, 'Nepoznato') AS 'Naziv drzave',
+    IFNULL(country.name, 'Nepoznato') AS 'Naziv drzave',
     COUNT(user.id) AS 'Registrovanih korisnika'
 FROM
 	user
